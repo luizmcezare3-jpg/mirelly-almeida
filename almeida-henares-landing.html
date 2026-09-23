@@ -1,0 +1,1160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Almeida Henares | Advocacia e Consultoria Jurídica</title>
+<!--
+  ===========================================================================
+  COMO USAR NO WORDPRESS
+  ===========================================================================
+  Este arquivo é um documento HTML completo apenas para você conseguir abrir
+  e conferir no navegador antes de publicar. Tudo o que o site realmente
+  usa está dentro da div#ah-site (com id="ah-site"), no <style id="ah-style">
+  e no <script id="ah-script"> logo abaixo. Nenhuma dessas partes depende de
+  <head> ou <body>, e todos os seletores estão prefixados com "ah-" para não
+  colidir com as classes do tema do WordPress.
+
+  Passo a passo recomendado:
+  1. No editor do WordPress (Gutenberg), crie uma página nova.
+  2. Adicione um bloco "HTML Personalizado" (Custom HTML).
+  3. Copie e cole todo o conteúdo de dentro de <div id="ah-site"> ... </div>
+     (incluindo o bloco <style> e o <script> que vêm logo depois dela) para
+     dentro desse bloco.
+  4. Se o seu tema tiver um container com largura máxima, use um template de
+     página "Em branco / Sem sidebar" (Blank/Full-width) para o hero e as
+     faixas coloridas ocuparem a largura inteira da tela — o CSS já usa o
+     truque de "full-bleed" (100vw) para isso.
+  5. ATENÇÃO: telefone/WhatsApp, e-mail, endereço, número da OAB, anos de
+     atuação, nº de casos e os depoimentos abaixo são DADOS FICTÍCIOS de
+     exemplo, usados só para o site não ficar com campos em branco. Troque
+     TODOS eles pelos dados reais da Dra. Mirelly antes de publicar.
+  6. Troque o avatar com as iniciais "MA" por uma foto real assim que tiver.
+  ===========================================================================
+-->
+<style id="ah-style">
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Lato:wght@400;600;700;900&display=swap');
+
+  #ah-site{
+    --ah-bordo-900:#2c0918;
+    --ah-bordo-800:#3d0d21;
+    --ah-bordo-700:#521230;
+    --ah-dourado-500:#c9974d;
+    --ah-dourado-400:#dcb679;
+    --ah-dourado-600:#a97a37;
+    --ah-creme-50:#faf6ee;
+    --ah-creme-100:#f2e9d8;
+    --ah-grafite-900:#241d1b;
+    --ah-grafite-600:#5c5049;
+    --ah-branco:#ffffff;
+    --ah-sombra: 0 20px 45px -20px rgba(44,9,24,0.35);
+    --ah-radius: 14px;
+    --ah-font-titulo: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    --ah-font-corpo: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+    font-family: var(--ah-font-corpo);
+    color: var(--ah-grafite-900);
+    background: var(--ah-creme-50);
+    overflow-x: hidden;
+    width: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  #ah-site, #ah-site *, #ah-site *::before, #ah-site *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  #ah-site img{ max-width:100%; display:block; }
+  #ah-site a{ text-decoration:none; color:inherit; }
+  #ah-site ul{ list-style:none; }
+  #ah-site button{ font-family:inherit; cursor:pointer; border:none; background:none; }
+  #ah-site svg{ display:block; }
+
+  #ah-site .ah-container{
+    width:100%;
+    max-width:1180px;
+    margin:0 auto;
+    padding:0 24px;
+  }
+
+  #ah-site .ah-full-bleed{
+    width:100vw;
+    position:relative;
+    left:50%;
+    right:50%;
+    margin-left:-50vw;
+    margin-right:-50vw;
+  }
+
+  #ah-site h1, #ah-site h2, #ah-site h3, #ah-site h4{
+    font-family: var(--ah-font-titulo);
+    font-weight:700;
+    line-height:1.15;
+  }
+
+  #ah-site .ah-eyebrow{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    font-size:12px;
+    letter-spacing:2.5px;
+    text-transform:uppercase;
+    font-weight:700;
+    color: var(--ah-dourado-500);
+  }
+  #ah-site .ah-eyebrow::before{
+    content:"";
+    width:28px;
+    height:1px;
+    background: var(--ah-dourado-500);
+    display:inline-block;
+  }
+
+  #ah-site .ah-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    padding:14px 28px;
+    border-radius:999px;
+    font-weight:700;
+    font-size:15px;
+    letter-spacing:.3px;
+    transition:transform .25s ease, box-shadow .25s ease, background .25s ease, color .25s ease;
+    white-space:nowrap;
+  }
+  #ah-site .ah-btn-primary{
+    background: linear-gradient(135deg, var(--ah-dourado-400), var(--ah-dourado-600));
+    color: var(--ah-bordo-900);
+    box-shadow: 0 12px 28px -10px rgba(201,151,77,0.55);
+  }
+  #ah-site .ah-btn-primary:hover{ transform:translateY(-2px); box-shadow:0 16px 32px -10px rgba(201,151,77,0.65); }
+  #ah-site .ah-btn-ghost{
+    background:transparent;
+    color: var(--ah-creme-50);
+    border:1.5px solid rgba(250,246,238,0.45);
+  }
+  #ah-site .ah-btn-ghost:hover{ background:rgba(250,246,238,0.1); border-color:var(--ah-creme-50); }
+  #ah-site .ah-btn-dark{
+    background: var(--ah-bordo-900);
+    color: var(--ah-creme-50);
+  }
+  #ah-site .ah-btn-dark:hover{ background: var(--ah-bordo-800); transform:translateY(-2px); }
+
+  /* ---------- HEADER ---------- */
+  #ah-site .ah-header{
+    position:fixed;
+    top:0; left:0; right:0;
+    z-index:500;
+    padding:16px 0;
+    background:transparent;
+    transition: background .35s ease, padding .35s ease, box-shadow .35s ease;
+  }
+  #ah-site .ah-header.ah-scrolled{
+    background: rgba(44,9,24,0.96);
+    padding:10px 0;
+    box-shadow: 0 8px 24px -12px rgba(0,0,0,0.4);
+    backdrop-filter: blur(6px);
+  }
+  #ah-site .ah-header-inner{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:16px;
+  }
+  #ah-site .ah-logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  #ah-site .ah-logo-mark{ width:38px; height:38px; flex-shrink:0; }
+  #ah-site .ah-logo-word{
+    font-family: var(--ah-font-titulo);
+    color: var(--ah-creme-50);
+    font-size:19px;
+    letter-spacing:1px;
+    line-height:1.1;
+  }
+  #ah-site .ah-logo-sub{
+    display:block;
+    font-family: var(--ah-font-corpo);
+    font-size:9px;
+    letter-spacing:1.6px;
+    color: var(--ah-dourado-400);
+    text-transform:uppercase;
+    margin-top:2px;
+  }
+  #ah-site .ah-nav{
+    display:flex;
+    align-items:center;
+    gap:34px;
+  }
+  #ah-site .ah-nav-links{
+    display:flex;
+    gap:30px;
+  }
+  #ah-site .ah-nav-links a{
+    color: var(--ah-creme-100);
+    font-size:14.5px;
+    font-weight:600;
+    letter-spacing:.2px;
+    position:relative;
+    padding:4px 0;
+  }
+  #ah-site .ah-nav-links a::after{
+    content:"";
+    position:absolute;
+    left:0; bottom:0;
+    width:0%; height:2px;
+    background:var(--ah-dourado-500);
+    transition:width .25s ease;
+  }
+  #ah-site .ah-nav-links a:hover::after{ width:100%; }
+  #ah-site .ah-nav-cta{ display:flex; align-items:center; gap:14px; }
+  #ah-site .ah-burger{
+    display:none;
+    width:42px; height:42px;
+    border-radius:10px;
+    align-items:center;
+    justify-content:center;
+    background:rgba(250,246,238,0.08);
+    flex-direction:column;
+    gap:5px;
+  }
+  #ah-site .ah-burger span{
+    width:20px; height:2px;
+    background:var(--ah-creme-50);
+    display:block;
+    transition: transform .25s ease, opacity .25s ease;
+  }
+  #ah-site .ah-burger.ah-open span:nth-child(1){ transform: translateY(7px) rotate(45deg); }
+  #ah-site .ah-burger.ah-open span:nth-child(2){ opacity:0; }
+  #ah-site .ah-burger.ah-open span:nth-child(3){ transform: translateY(-7px) rotate(-45deg); }
+
+  #ah-site .ah-mobile-menu{
+    display:none;
+    position:fixed;
+    inset:0;
+    z-index:490;
+    background: var(--ah-bordo-900);
+    padding:110px 28px 40px;
+    flex-direction:column;
+    gap:26px;
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(-12px);
+    transition: opacity .3s ease, transform .3s ease, visibility .3s;
+  }
+  #ah-site .ah-mobile-menu.ah-active{
+    display:flex;
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+  }
+  #ah-site .ah-mobile-menu a{
+    color:var(--ah-creme-50);
+    font-family:var(--ah-font-titulo);
+    font-size:26px;
+  }
+  #ah-site .ah-mobile-menu .ah-btn{ align-self:flex-start; margin-top:10px; }
+
+  /* ---------- HERO ---------- */
+  #ah-site .ah-hero{
+    position:relative;
+    background: radial-gradient(circle at 78% 18%, var(--ah-bordo-700) 0%, var(--ah-bordo-900) 55%);
+    padding:150px 0 100px;
+    overflow:hidden;
+  }
+  #ah-site .ah-hero-grid{
+    position:relative;
+    z-index:2;
+    display:grid;
+    grid-template-columns: 1.05fr 0.85fr;
+    align-items:center;
+    gap:40px;
+  }
+  #ah-site .ah-hero-illustration{
+    position:absolute;
+    top:50%;
+    right:-4%;
+    transform:translateY(-50%);
+    width:min(46vw, 560px);
+    opacity:0.16;
+    z-index:1;
+    pointer-events:none;
+  }
+  #ah-site .ah-hero-text{ position:relative; z-index:2; }
+  #ah-site .ah-hero-text h1{
+    color: var(--ah-creme-50);
+    font-size: clamp(32px, 5.4vw, 54px);
+    margin:18px 0 22px;
+  }
+  #ah-site .ah-hero-text h1 em{
+    color: var(--ah-dourado-500);
+    font-style:normal;
+  }
+  #ah-site .ah-hero-text p{
+    color: var(--ah-creme-100);
+    font-size: clamp(15px, 1.7vw, 18px);
+    line-height:1.7;
+    max-width:520px;
+    margin-bottom:34px;
+    opacity:0.9;
+  }
+  #ah-site .ah-hero-actions{
+    display:flex;
+    flex-wrap:wrap;
+    gap:16px;
+    margin-bottom:34px;
+  }
+  #ah-site .ah-hero-trust{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color: var(--ah-creme-100);
+    font-size:13.5px;
+    opacity:0.85;
+  }
+  #ah-site .ah-hero-trust svg{ width:18px; height:18px; flex-shrink:0; color:var(--ah-dourado-500); }
+
+  #ah-site .ah-hero-card{
+    position:relative;
+    z-index:2;
+    background: rgba(250,246,238,0.06);
+    border:1px solid rgba(201,151,77,0.35);
+    border-radius: var(--ah-radius);
+    padding:34px 30px;
+    backdrop-filter: blur(4px);
+  }
+  #ah-site .ah-hero-card .ah-logo-mark{ width:64px; height:64px; margin:0 auto 18px; }
+  #ah-site .ah-hero-card h3{
+    color:var(--ah-creme-50);
+    text-align:center;
+    font-size:22px;
+    margin-bottom:6px;
+  }
+  #ah-site .ah-hero-card p.ah-role{
+    text-align:center;
+    color:var(--ah-dourado-400);
+    font-size:12.5px;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    margin-bottom:22px;
+  }
+  #ah-site .ah-hero-stats{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:16px;
+  }
+  #ah-site .ah-hero-stats div{
+    text-align:center;
+    border-top:1px solid rgba(201,151,77,0.25);
+    padding-top:14px;
+  }
+  #ah-site .ah-hero-stats strong{
+    display:block;
+    font-family:var(--ah-font-titulo);
+    color:var(--ah-dourado-500);
+    font-size:24px;
+  }
+  #ah-site .ah-hero-stats span{
+    color:var(--ah-creme-100);
+    font-size:11.5px;
+    letter-spacing:.4px;
+  }
+
+  /* ---------- SEÇÃO GENÉRICA ---------- */
+  #ah-site .ah-section{ padding:88px 0; }
+  #ah-site .ah-section-head{
+    text-align:center;
+    max-width:640px;
+    margin:0 auto 56px;
+  }
+  #ah-site .ah-section-head h2{
+    font-size: clamp(26px, 4vw, 38px);
+    margin-top:14px;
+    color: var(--ah-bordo-900);
+  }
+  #ah-site .ah-section-head p{
+    margin-top:16px;
+    color: var(--ah-grafite-600);
+    font-size:16px;
+    line-height:1.7;
+  }
+  #ah-site .ah-dark .ah-eyebrow{ color:var(--ah-dourado-400); }
+  #ah-site .ah-dark .ah-eyebrow::before{ background:var(--ah-dourado-400); }
+  #ah-site .ah-dark .ah-section-head h2{ color:var(--ah-creme-50); }
+  #ah-site .ah-dark .ah-section-head p{ color:var(--ah-creme-100); opacity:.85; }
+
+  /* ---------- SOBRE ---------- */
+  #ah-site .ah-sobre-grid{
+    display:grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap:56px;
+    align-items:center;
+  }
+  #ah-site .ah-avatar-frame{
+    position:relative;
+    width:100%;
+    max-width:360px;
+    margin:0 auto;
+    aspect-ratio:4/5;
+    border-radius: var(--ah-radius);
+    background: linear-gradient(160deg, var(--ah-bordo-800), var(--ah-bordo-900));
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow: var(--ah-sombra);
+    border:1px solid rgba(201,151,77,0.4);
+  }
+  #ah-site .ah-avatar-initials{
+    font-family:var(--ah-font-titulo);
+    font-size:88px;
+    color: var(--ah-dourado-500);
+    letter-spacing:4px;
+  }
+  #ah-site .ah-avatar-badge{
+    position:absolute;
+    bottom:-18px;
+    left:50%;
+    transform:translateX(-50%);
+    background: var(--ah-dourado-500);
+    color: var(--ah-bordo-900);
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:.5px;
+    padding:10px 20px;
+    border-radius:999px;
+    white-space:nowrap;
+    box-shadow:0 10px 20px -8px rgba(169,122,55,0.6);
+  }
+  #ah-site .ah-sobre-text h2{ font-size:clamp(26px,4vw,36px); color:var(--ah-bordo-900); margin:14px 0 18px; }
+  #ah-site .ah-sobre-text p{ color:var(--ah-grafite-600); line-height:1.8; margin-bottom:16px; font-size:15.5px; }
+  #ah-site .ah-credenciais{
+    margin-top:26px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:14px 20px;
+  }
+  #ah-site .ah-credenciais li{
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+    font-size:14.5px;
+    color:var(--ah-grafite-900);
+    font-weight:600;
+  }
+  #ah-site .ah-credenciais svg{ width:20px; height:20px; flex-shrink:0; color:var(--ah-dourado-600); margin-top:1px; }
+
+  /* ---------- ÁREAS DE ATUAÇÃO ---------- */
+  #ah-site .ah-areas-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:24px;
+  }
+  #ah-site .ah-area-card{
+    background: var(--ah-branco);
+    border:1px solid rgba(44,9,24,0.08);
+    border-radius: var(--ah-radius);
+    padding:34px 26px;
+    transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+  }
+  #ah-site .ah-area-card:hover{
+    transform:translateY(-6px);
+    box-shadow: var(--ah-sombra);
+    border-color: rgba(201,151,77,0.5);
+  }
+  #ah-site .ah-area-icon{
+    width:54px; height:54px;
+    border-radius:12px;
+    background: linear-gradient(150deg, var(--ah-bordo-800), var(--ah-bordo-900));
+    display:flex; align-items:center; justify-content:center;
+    margin-bottom:20px;
+  }
+  #ah-site .ah-area-icon svg{ width:26px; height:26px; color:var(--ah-dourado-500); }
+  #ah-site .ah-area-card h3{
+    font-size:18px;
+    color:var(--ah-bordo-900);
+    margin-bottom:10px;
+  }
+  #ah-site .ah-area-card p{ color:var(--ah-grafite-600); font-size:14px; line-height:1.65; }
+  #ah-site .ah-area-card ul{ margin-top:14px; display:flex; flex-direction:column; gap:7px; }
+  #ah-site .ah-area-card ul li{
+    font-size:13px;
+    color:var(--ah-grafite-600);
+    display:flex; align-items:center; gap:8px;
+  }
+  #ah-site .ah-area-card ul li::before{
+    content:"";
+    width:5px; height:5px;
+    border-radius:50%;
+    background:var(--ah-dourado-500);
+    flex-shrink:0;
+  }
+
+  /* ---------- DIFERENCIAIS ---------- */
+  #ah-site .ah-diferenciais{
+    background: var(--ah-bordo-900);
+    position:relative;
+  }
+  #ah-site .ah-dif-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+  }
+  #ah-site .ah-dif-item{ text-align:left; }
+  #ah-site .ah-dif-icon{
+    width:50px; height:50px;
+    border-radius:50%;
+    border:1.5px solid var(--ah-dourado-500);
+    display:flex; align-items:center; justify-content:center;
+    margin-bottom:18px;
+  }
+  #ah-site .ah-dif-icon svg{ width:22px; height:22px; color:var(--ah-dourado-500); }
+  #ah-site .ah-dif-item h3{
+    font-size:17px;
+    color:var(--ah-creme-50);
+    margin-bottom:10px;
+    font-family:var(--ah-font-titulo);
+  }
+  #ah-site .ah-dif-item p{ color:var(--ah-creme-100); font-size:14px; line-height:1.7; opacity:.85; }
+
+  /* ---------- CTA BANNER ---------- */
+  #ah-site .ah-cta-banner{
+    background: linear-gradient(120deg, var(--ah-dourado-600), var(--ah-dourado-400));
+    padding:56px 0;
+  }
+  #ah-site .ah-cta-inner{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:24px;
+    flex-wrap:wrap;
+  }
+  #ah-site .ah-cta-inner h2{
+    color: var(--ah-bordo-900);
+    font-size:clamp(22px,3.4vw,30px);
+    max-width:560px;
+  }
+  #ah-site .ah-cta-inner p{
+    color: var(--ah-bordo-900);
+    opacity:.75;
+    margin-top:8px;
+    font-size:15px;
+  }
+
+  /* ---------- DEPOIMENTOS ---------- */
+  #ah-site .ah-depo-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:26px;
+  }
+  #ah-site .ah-depo-card{
+    background: var(--ah-branco);
+    border-radius: var(--ah-radius);
+    padding:30px 26px;
+    border:1px solid rgba(44,9,24,0.08);
+  }
+  #ah-site .ah-depo-stars{ color:var(--ah-dourado-500); font-size:15px; letter-spacing:2px; margin-bottom:16px; }
+  #ah-site .ah-depo-card p.ah-quote{
+    color:var(--ah-grafite-900);
+    font-size:14.5px;
+    line-height:1.75;
+    font-style:italic;
+    margin-bottom:20px;
+  }
+  #ah-site .ah-depo-author{ display:flex; align-items:center; gap:12px; }
+  #ah-site .ah-depo-avatar{
+    width:40px; height:40px;
+    border-radius:50%;
+    background: linear-gradient(150deg, var(--ah-bordo-800), var(--ah-bordo-900));
+    color:var(--ah-dourado-500);
+    display:flex; align-items:center; justify-content:center;
+    font-family:var(--ah-font-titulo);
+    font-size:15px;
+    flex-shrink:0;
+  }
+  #ah-site .ah-depo-author strong{ display:block; font-size:14px; color:var(--ah-bordo-900); }
+  #ah-site .ah-depo-author span{ font-size:12px; color:var(--ah-grafite-600); }
+
+  /* ---------- CONTATO ---------- */
+  #ah-site .ah-contato{
+    background: var(--ah-creme-100);
+  }
+  #ah-site .ah-contato-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:stretch;
+  }
+  #ah-site .ah-contato-info h2{ font-size:clamp(24px,3.6vw,32px); color:var(--ah-bordo-900); margin:14px 0 18px; }
+  #ah-site .ah-contato-info p{ color:var(--ah-grafite-600); line-height:1.75; margin-bottom:26px; font-size:15px; }
+  #ah-site .ah-contato-list{ display:flex; flex-direction:column; gap:18px; }
+  #ah-site .ah-contato-list li{ display:flex; align-items:flex-start; gap:14px; }
+  #ah-site .ah-contato-list .ah-ic{
+    width:42px; height:42px;
+    border-radius:10px;
+    background: var(--ah-bordo-900);
+    display:flex; align-items:center; justify-content:center;
+    flex-shrink:0;
+  }
+  #ah-site .ah-contato-list svg{ width:19px; height:19px; color:var(--ah-dourado-500); }
+  #ah-site .ah-contato-list strong{ display:block; font-size:14.5px; color:var(--ah-bordo-900); }
+  #ah-site .ah-contato-list span, #ah-site .ah-contato-list a{ font-size:14px; color:var(--ah-grafite-600); }
+
+  #ah-site .ah-contato-card{
+    background: var(--ah-bordo-900);
+    border-radius: var(--ah-radius);
+    padding:40px 34px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    text-align:center;
+    box-shadow: var(--ah-sombra);
+  }
+  #ah-site .ah-contato-card .ah-logo-mark{ width:56px; height:56px; margin:0 auto 18px; }
+  #ah-site .ah-contato-card h3{ color:var(--ah-creme-50); font-size:22px; margin-bottom:10px; }
+  #ah-site .ah-contato-card p{ color:var(--ah-creme-100); opacity:.85; font-size:14px; margin-bottom:26px; line-height:1.6; }
+
+  /* ---------- FOOTER ---------- */
+  #ah-site .ah-footer{
+    background: var(--ah-bordo-900);
+    padding:56px 0 26px;
+    border-top:1px solid rgba(201,151,77,0.15);
+  }
+  #ah-site .ah-footer-grid{
+    display:grid;
+    grid-template-columns:1.3fr 1fr 1fr;
+    gap:40px;
+    padding-bottom:36px;
+  }
+  #ah-site .ah-footer-brand p{ color:var(--ah-creme-100); opacity:.7; font-size:13.5px; line-height:1.7; margin-top:14px; max-width:280px; }
+  #ah-site .ah-footer h4{
+    color:var(--ah-dourado-400);
+    font-size:13px;
+    letter-spacing:1.2px;
+    text-transform:uppercase;
+    margin-bottom:18px;
+    font-family:var(--ah-font-corpo);
+  }
+  #ah-site .ah-footer-links{ display:flex; flex-direction:column; gap:12px; }
+  #ah-site .ah-footer-links a{ color:var(--ah-creme-100); opacity:.75; font-size:14px; }
+  #ah-site .ah-footer-links a:hover{ opacity:1; color:var(--ah-dourado-400); }
+  #ah-site .ah-footer-social{ display:flex; gap:12px; margin-top:6px; }
+  #ah-site .ah-footer-social a{
+    width:38px; height:38px;
+    border-radius:50%;
+    border:1px solid rgba(201,151,77,0.4);
+    display:flex; align-items:center; justify-content:center;
+  }
+  #ah-site .ah-footer-social svg{ width:16px; height:16px; color:var(--ah-dourado-400); }
+  #ah-site .ah-footer-bottom{
+    border-top:1px solid rgba(250,246,238,0.1);
+    padding-top:22px;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:10px;
+  }
+  #ah-site .ah-footer-bottom p{ color:var(--ah-creme-100); opacity:.55; font-size:12.5px; }
+
+  /* ---------- REVEAL ANIM ---------- */
+  /* Visível por padrão (funciona sem JS); só ganha um leve slide-up ao entrar na tela. */
+  #ah-site .ah-reveal{ opacity:1; transform:none; transition:opacity .6s ease, transform .6s ease; }
+  #ah-site .ah-reveal.ah-pre-reveal{ opacity:0; transform:translateY(24px); }
+
+  /* ---------- WHATSAPP FLUTUANTE ---------- */
+  #ah-site .ah-whatsapp-float{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    z-index:600;
+    width:58px; height:58px;
+    border-radius:50%;
+    background:#25D366;
+    display:flex; align-items:center; justify-content:center;
+    box-shadow:0 12px 26px -8px rgba(0,0,0,0.4);
+    transition:transform .25s ease;
+  }
+  #ah-site .ah-whatsapp-float:hover{ transform:scale(1.08); }
+  #ah-site .ah-whatsapp-float svg{ width:28px; height:28px; color:#fff; }
+
+  /* =========================================================
+     RESPONSIVO
+     ========================================================= */
+  @media (max-width: 1024px){
+    #ah-site .ah-areas-grid{ grid-template-columns:repeat(2,1fr); }
+    #ah-site .ah-dif-grid{ grid-template-columns:repeat(2,1fr); }
+    #ah-site .ah-depo-grid{ grid-template-columns:repeat(1,1fr); }
+    #ah-site .ah-hero-grid{ grid-template-columns:1fr; }
+    #ah-site .ah-hero-card{ max-width:440px; margin:0 auto; }
+    #ah-site .ah-hero-illustration{ opacity:0.1; width:70vw; }
+    #ah-site .ah-sobre-grid{ grid-template-columns:1fr; }
+    #ah-site .ah-avatar-frame{ margin-bottom:20px; }
+    #ah-site .ah-contato-grid{ grid-template-columns:1fr; }
+    #ah-site .ah-footer-grid{ grid-template-columns:1fr 1fr; }
+  }
+
+  @media (max-width: 860px){
+    #ah-site .ah-nav-links, #ah-site .ah-nav-cta .ah-btn{ display:none; }
+    #ah-site .ah-burger{ display:flex; }
+    #ah-site .ah-hero{ padding:120px 0 70px; }
+    #ah-site .ah-section{ padding:64px 0; }
+    #ah-site .ah-credenciais{ grid-template-columns:1fr; }
+  }
+
+  @media (max-width: 640px){
+    #ah-site .ah-container{ padding:0 18px; }
+    #ah-site .ah-areas-grid{ grid-template-columns:1fr; }
+    #ah-site .ah-dif-grid{ grid-template-columns:1fr; }
+    #ah-site .ah-hero-actions{ flex-direction:column; align-items:stretch; }
+    #ah-site .ah-hero-actions .ah-btn{ width:100%; }
+    #ah-site .ah-hero-trust{ flex-wrap:wrap; }
+    #ah-site .ah-cta-inner{ flex-direction:column; text-align:center; align-items:center; }
+    #ah-site .ah-cta-inner .ah-btn{ width:100%; }
+    #ah-site .ah-footer-grid{ grid-template-columns:1fr; gap:30px; }
+    #ah-site .ah-footer-bottom{ flex-direction:column; text-align:center; }
+    #ah-site .ah-whatsapp-float{ width:52px; height:52px; right:14px; bottom:14px; }
+    #ah-site .ah-hero-illustration{ opacity:0.08; }
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    #ah-site .ah-reveal{ transition:none; opacity:1; transform:none; }
+    #ah-site *{ scroll-behavior:auto !important; }
+  }
+</style>
+</head>
+<body>
+
+<div id="ah-site">
+
+  <!-- LOGO SVG (reutilizado no header, hero, contato e footer) -->
+  <svg style="display:none">
+    <symbol id="ah-logo-symbol" viewBox="0 0 100 100">
+      <rect x="6" y="6" width="88" height="88" fill="none" stroke="currentColor" stroke-width="2.5"/>
+      <path d="M28 30 L28 70 M28 30 L18 22 M28 30 L38 22" stroke="currentColor" stroke-width="2" fill="none"/>
+      <path d="M72 30 L72 70 M72 30 L62 22 M72 30 L82 22" stroke="currentColor" stroke-width="2" fill="none"/>
+      <path d="M18 22 L38 22 M18 22 L12 40 L24 40 Z M38 22 L32 40 L44 40 Z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linejoin="round"/>
+      <path d="M62 22 L82 22 M62 22 L56 40 L68 40 Z M82 22 L76 40 L88 40 Z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linejoin="round"/>
+      <path d="M35 28 L50 65 L65 28" stroke="currentColor" stroke-width="6" fill="none" stroke-linecap="square"/>
+      <line x1="24" y1="76" x2="76" y2="76" stroke="currentColor" stroke-width="2"/>
+    </symbol>
+  </svg>
+
+  <!-- ============ HEADER ============ -->
+  <header class="ah-header" id="ahHeader">
+    <div class="ah-container ah-header-inner">
+      <a href="#ah-inicio" class="ah-logo" aria-label="Almeida Henares - Início">
+        <svg class="ah-logo-mark" style="color:var(--ah-dourado-500)"><use href="#ah-logo-symbol"/></svg>
+        <span>
+          <span class="ah-logo-word">Almeida Henares</span>
+          <span class="ah-logo-sub">Advocacia &amp; Consultoria</span>
+        </span>
+      </a>
+
+      <nav class="ah-nav">
+        <div class="ah-nav-links">
+          <a href="#ah-inicio">Início</a>
+          <a href="#ah-sobre">Sobre</a>
+          <a href="#ah-areas">Áreas de Atuação</a>
+          <a href="#ah-diferenciais">Diferenciais</a>
+          <a href="#ah-contato">Contato</a>
+        </div>
+        <div class="ah-nav-cta">
+          <a class="ah-btn ah-btn-primary" href="https://wa.me/5516991832231" target="_blank" rel="noopener">Fale pelo WhatsApp</a>
+        </div>
+      </nav>
+
+      <button class="ah-burger" id="ahBurger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ============ MENU MOBILE ============ -->
+  <div class="ah-mobile-menu" id="ahMobileMenu">
+    <a href="#ah-inicio">Início</a>
+    <a href="#ah-sobre">Sobre</a>
+    <a href="#ah-areas">Áreas de Atuação</a>
+    <a href="#ah-diferenciais">Diferenciais</a>
+    <a href="#ah-contato">Contato</a>
+    <a class="ah-btn ah-btn-primary" href="https://wa.me/5516991832231" target="_blank" rel="noopener">Fale pelo WhatsApp</a>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <section class="ah-hero" id="ah-inicio">
+    <!-- Ilustração de fundo da Estátua da Justiça (Têmis) em SVG, sutil -->
+    <svg class="ah-hero-illustration" viewBox="0 0 400 600" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M200 40c-14 0-25 11-25 25 0 8 4 15 9 20-18 8-31 26-31 47v14h94v-14c0-21-13-39-31-47 5-5 9-12 9-20 0-14-11-25-25-25z" fill="#C9974D"/>
+      <rect x="192" y="150" width="16" height="40" fill="#C9974D"/>
+      <line x1="120" y1="170" x2="280" y2="170" stroke="#C9974D" stroke-width="4"/>
+      <line x1="200" y1="170" x2="200" y2="130" stroke="#C9974D" stroke-width="4"/>
+      <line x1="120" y1="170" x2="120" y2="130" stroke="#C9974D" stroke-width="4"/>
+      <path d="M100 130 L140 130 L120 175 Z" fill="none" stroke="#C9974D" stroke-width="3"/>
+      <line x1="280" y1="170" x2="280" y2="130" stroke="#C9974D" stroke-width="4"/>
+      <path d="M260 130 L300 130 L280 175 Z" fill="none" stroke="#C9974D" stroke-width="3"/>
+      <path d="M150 190 C150 190 130 260 130 340 C130 420 150 470 150 470 L250 470 C250 470 270 420 270 340 C270 260 250 190 250 190 Z" fill="#C9974D" opacity="0.9"/>
+      <path d="M120 470 L280 470 L300 520 L100 520 Z" fill="#C9974D"/>
+      <rect x="60" y="520" width="280" height="26" fill="#C9974D"/>
+      <rect x="20" y="546" width="360" height="20" fill="#C9974D"/>
+    </svg>
+
+    <div class="ah-container ah-hero-grid">
+      <div class="ah-hero-text ah-reveal">
+        <span class="ah-eyebrow">Advocacia Cível</span>
+        <h1>Defendendo seus direitos com <em>ética, técnica</em> e dedicação</h1>
+        <p>Atuação especializada em Direito de Família, Sucessões, Busca e Apreensão de Veículos e Defesa do Consumidor. Atendimento humanizado em Ribeirão Preto - SP e em todo o Brasil.</p>
+        <div class="ah-hero-actions">
+          <a class="ah-btn ah-btn-primary" href="https://wa.me/5516991832231" target="_blank" rel="noopener">Agende uma Consulta</a>
+          <a class="ah-btn ah-btn-ghost" href="#ah-areas">Conheça as áreas de atuação</a>
+        </div>
+        <div class="ah-hero-trust">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z"/></svg>
+          <span>Atendimento presencial em Ribeirão Preto - SP e online para todo o Brasil</span>
+        </div>
+      </div>
+
+      <div class="ah-hero-card ah-reveal">
+        <svg class="ah-logo-mark" style="color:var(--ah-dourado-500)"><use href="#ah-logo-symbol"/></svg>
+        <h3>Dra. Mirelly Almeida</h3>
+        <p class="ah-role">OAB/SP 412.987</p>
+        <div class="ah-hero-stats">
+          <div><strong>+10</strong><span>ANOS DE ATUAÇÃO</span></div>
+          <div><strong>+400</strong><span>CASOS ATENDIDOS</span></div>
+          <div><strong>4</strong><span>ÁREAS DE ATUAÇÃO</span></div>
+          <div><strong>100%</strong><span>BRASIL ATENDIDO</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SOBRE ============ -->
+  <section class="ah-section" id="ah-sobre">
+    <div class="ah-container ah-sobre-grid">
+      <div class="ah-reveal">
+        <div class="ah-avatar-frame">
+          <span class="ah-avatar-initials">MA</span>
+          <span class="ah-avatar-badge">Dra. Mirelly Almeida</span>
+        </div>
+      </div>
+      <div class="ah-sobre-text ah-reveal">
+        <span class="ah-eyebrow">Sobre a advogada</span>
+        <h2>Compromisso com pessoas, não apenas com processos</h2>
+        <p>Mirelly Almeida é advogada especializada em Direito Cível, com atuação focada em Direito de Família, Sucessões, Direito do Consumidor e regularização de veículos. Seu trabalho une rigor técnico e atendimento próximo, para que cada cliente entenda com clareza cada etapa do seu processo.</p>
+        <p>Com sede em Ribeirão Preto - SP, o escritório Almeida Henares atende clientes de todo o Brasil por meio de consultas online, sem abrir mão da qualidade e da atenção que cada caso exige.</p>
+        <ul class="ah-credenciais">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Inscrita na OAB/SP</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Atendimento em todo o Brasil</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Consultas presenciais e online</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg> Atendimento ético e transparente</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ÁREAS DE ATUAÇÃO ============ -->
+  <section class="ah-section" id="ah-areas" style="background:var(--ah-creme-100)">
+    <div class="ah-container">
+      <div class="ah-section-head ah-reveal">
+        <span class="ah-eyebrow">O que fazemos</span>
+        <h2>Áreas de Atuação</h2>
+        <p>Soluções jurídicas completas em Direito Cível, com foco em resultados e clareza durante todo o processo.</p>
+      </div>
+
+      <div class="ah-areas-grid">
+        <div class="ah-area-card ah-reveal">
+          <div class="ah-area-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v18M5 8l7-5 7 5M3 8l4 8H1l2-8zm16 0l4 8h-6l2-8zM7 21h10"/></svg>
+          </div>
+          <h3>Direito de Família</h3>
+          <p>Orientação e representação em processos que envolvem a estrutura familiar, com sensibilidade e agilidade.</p>
+          <ul>
+            <li>Divórcio consensual e litigioso</li>
+            <li>Pensão alimentícia</li>
+            <li>Guarda de filhos</li>
+          </ul>
+        </div>
+
+        <div class="ah-area-card ah-reveal">
+          <div class="ah-area-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18M5 21V9l7-6 7 6v12M9 21v-6h6v6"/></svg>
+          </div>
+          <h3>Sucessões</h3>
+          <p>Condução de inventários e planejamento sucessório com segurança jurídica para toda a família.</p>
+          <ul>
+            <li>Inventário judicial e extrajudicial</li>
+            <li>Partilha de bens</li>
+            <li>Testamentos</li>
+          </ul>
+        </div>
+
+        <div class="ah-area-card ah-reveal">
+          <div class="ah-area-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 13l2-6a2 2 0 012-1h10a2 2 0 012 1l2 6M3 13v5a1 1 0 001 1h1a1 1 0 001-1v-1h12v1a1 1 0 001 1h1a1 1 0 001-1v-5M3 13h18M7 17h.01M17 17h.01"/></svg>
+          </div>
+          <h3>Busca e Apreensão</h3>
+          <p>Defesa em ações de busca e apreensão de veículos, buscando a melhor solução para o seu caso.</p>
+          <ul>
+            <li>Contestação de ações</li>
+            <li>Revisão de contratos</li>
+            <li>Negociação com credores</li>
+          </ul>
+        </div>
+
+        <div class="ah-area-card ah-reveal">
+          <div class="ah-area-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2L3 6v6c0 5 4 9.7 9 10 5-.3 9-5 9-10V6l-9-4z"/></svg>
+          </div>
+          <h3>Defesa do Consumidor</h3>
+          <p>Proteção dos seus direitos em relações de consumo, com atuação firme contra abusos e cobranças indevidas.</p>
+          <ul>
+            <li>Negativação indevida</li>
+            <li>Cobrança indevida</li>
+            <li>Revisão de contratos</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DIFERENCIAIS ============ -->
+  <section class="ah-section ah-diferenciais ah-dark" id="ah-diferenciais">
+    <div class="ah-container">
+      <div class="ah-section-head ah-reveal">
+        <span class="ah-eyebrow">Por que escolher a Almeida Henares</span>
+        <h2>Diferenciais no atendimento</h2>
+        <p>Mais do que resolver processos, buscamos tranquilidade para quem confia no nosso trabalho.</p>
+      </div>
+
+      <div class="ah-dif-grid">
+        <div class="ah-dif-item ah-reveal">
+          <div class="ah-dif-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20.8 4.6a5.5 5.5 0 00-7.8 0L12 5.6l-1-1a5.5 5.5 0 10-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 000-7.8z"/></svg></div>
+          <h3>Atendimento humanizado</h3>
+          <p>Cada cliente é ouvido com atenção, entendendo o lado humano por trás de cada processo.</p>
+        </div>
+        <div class="ah-dif-item ah-reveal">
+          <div class="ah-dif-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l3 6 6 .9-4.5 4.4L17.5 20 12 17l-5.5 3 1-6.7L3 8.9 9 8z"/></svg></div>
+          <h3>Ética e transparência</h3>
+          <p>Comunicação clara sobre cada etapa do processo, sem promessas irreais.</p>
+        </div>
+        <div class="ah-dif-item ah-reveal">
+          <div class="ah-dif-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h4l3 8 4-16 3 8h4"/></svg></div>
+          <h3>Agilidade</h3>
+          <p>Respostas rápidas e acompanhamento constante durante todo o andamento do caso.</p>
+        </div>
+        <div class="ah-dif-item ah-reveal">
+          <div class="ah-dif-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2C7 6 4 9 4 14a8 8 0 0016 0c0-5-3-8-8-12z"/></svg></div>
+          <h3>Atuação em todo o Brasil</h3>
+          <p>Consultas online para clientes de qualquer estado, com a mesma qualidade do presencial.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA BANNER ============ -->
+  <section class="ah-cta-banner">
+    <div class="ah-container ah-cta-inner ah-reveal">
+      <div>
+        <h2>Precisa de orientação jurídica agora?</h2>
+        <p>Fale diretamente com a Dra. Mirelly Almeida e entenda os próximos passos do seu caso.</p>
+      </div>
+      <a class="ah-btn ah-btn-dark" href="https://wa.me/5516991832231" target="_blank" rel="noopener">Falar no WhatsApp agora</a>
+    </div>
+  </section>
+
+  <!-- ============ DEPOIMENTOS ============ -->
+  <section class="ah-section" id="ah-depoimentos">
+    <div class="ah-container">
+      <div class="ah-section-head ah-reveal">
+        <span class="ah-eyebrow">Depoimentos</span>
+        <h2>O que dizem nossos clientes</h2>
+        <p>Depoimentos ilustrativos — substitua pelos relatos reais dos clientes assim que estiverem disponíveis.</p>
+      </div>
+      <div class="ah-depo-grid">
+        <div class="ah-depo-card ah-reveal">
+          <div class="ah-depo-stars">★★★★★</div>
+          <p class="ah-quote">"Fui muito bem orientada durante todo o processo de divórcio. Atendimento atencioso e claro do início ao fim."</p>
+          <div class="ah-depo-author">
+            <div class="ah-depo-avatar">C.</div>
+            <div><strong>Camila Ribeiro</strong><span>Ribeirão Preto - SP</span></div>
+          </div>
+        </div>
+        <div class="ah-depo-card ah-reveal">
+          <div class="ah-depo-stars">★★★★★</div>
+          <p class="ah-quote">"Resolveu minha negativação indevida com muita competência. Recomendo para quem precisa de um bom advogado."</p>
+          <div class="ah-depo-author">
+            <div class="ah-depo-avatar">R.</div>
+            <div><strong>Rodrigo Andrade</strong><span>Atendimento Online</span></div>
+          </div>
+        </div>
+        <div class="ah-depo-card ah-reveal">
+          <div class="ah-depo-stars">★★★★★</div>
+          <p class="ah-quote">"Processo de inventário conduzido com muita clareza e agilidade. Me senti segura o tempo todo."</p>
+          <div class="ah-depo-author">
+            <div class="ah-depo-avatar">L.</div>
+            <div><strong>Luciana Martins</strong><span>São Paulo - SP</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTATO ============ -->
+  <section class="ah-section ah-contato" id="ah-contato">
+    <div class="ah-container ah-contato-grid">
+      <div class="ah-contato-info ah-reveal">
+        <span class="ah-eyebrow">Fale conosco</span>
+        <h2>Vamos conversar sobre o seu caso</h2>
+        <p>Entre em contato e agende uma consulta. Atendemos presencialmente em Ribeirão Preto - SP e online para todo o Brasil.</p>
+        <ul class="ah-contato-list">
+          <li>
+            <span class="ah-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 5a2 2 0 012-2h3l2 5-2.5 1.5a11 11 0 005 5L14 12l5 2v3a2 2 0 01-2 2A16 16 0 013 5z"/></svg></span>
+            <div><strong>WhatsApp / Telefone</strong><a href="https://wa.me/5516991832231" target="_blank" rel="noopener">(16) 99183-2231</a></div>
+          </li>
+          <li>
+            <span class="ah-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 6l9 7 9-7M3 6h18v12H3V6z"/></svg></span>
+            <div><strong>E-mail</strong><a href="mailto:contato@almeidahenares.com.br">contato@almeidahenares.com.br</a></div>
+          </li>
+          <li>
+            <span class="ah-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></span>
+            <div><strong>Endereço</strong><span>Rua Amazonas, 245 - Sala 802, Jardim América, Ribeirão Preto - SP</span></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="ah-contato-card ah-reveal">
+        <svg class="ah-logo-mark" style="color:var(--ah-dourado-500); margin:0 auto 18px;"><use href="#ah-logo-symbol"/></svg>
+        <h3>Fale agora com a Dra. Mirelly</h3>
+        <p>Atendimento rápido pelo WhatsApp para tirar dúvidas iniciais sobre o seu caso, sem compromisso.</p>
+        <a class="ah-btn ah-btn-primary" href="https://wa.me/5516991832231" target="_blank" rel="noopener">Iniciar conversa no WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="ah-footer">
+    <div class="ah-container">
+      <div class="ah-footer-grid">
+        <div class="ah-footer-brand">
+          <a href="#ah-inicio" class="ah-logo">
+            <svg class="ah-logo-mark" style="color:var(--ah-dourado-500)"><use href="#ah-logo-symbol"/></svg>
+            <span>
+              <span class="ah-logo-word">Almeida Henares</span>
+              <span class="ah-logo-sub">Advocacia &amp; Consultoria</span>
+            </span>
+          </a>
+          <p>Advocacia Cível com foco em Direito de Família, Sucessões, Busca e Apreensão de Veículos e Defesa do Consumidor. Atendimento em Ribeirão Preto - SP e em todo o Brasil.</p>
+          <div class="ah-footer-social">
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="3"/><line x1="8" y1="11" x2="8" y2="16"/><line x1="8" y1="8" x2="8" y2="8"/><line x1="12" y1="16" x2="12" y2="11"/><path d="M12 13c0-1.5 1-2.5 2.5-2.5S17 11.5 17 13v3"/></svg></a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Navegação</h4>
+          <div class="ah-footer-links">
+            <a href="#ah-inicio">Início</a>
+            <a href="#ah-sobre">Sobre</a>
+            <a href="#ah-areas">Áreas de Atuação</a>
+            <a href="#ah-diferenciais">Diferenciais</a>
+            <a href="#ah-contato">Contato</a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Contato</h4>
+          <div class="ah-footer-links">
+            <a href="https://wa.me/5516991832231" target="_blank" rel="noopener">(16) 99183-2231</a>
+            <a href="mailto:contato@almeidahenares.com.br">contato@almeidahenares.com.br</a>
+            <span style="color:var(--ah-creme-100);opacity:.75;font-size:14px;">Ribeirão Preto - SP</span>
+            <span style="color:var(--ah-creme-100);opacity:.75;font-size:14px;">Atendimento em todo o Brasil</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="ah-footer-bottom">
+        <p>© <span id="ahYear"></span> Almeida Henares Advocacia. Todos os direitos reservados. OAB/SP 412.987.</p>
+        <p>Este site não constitui aconselhamento jurídico definitivo. Consulte um advogado para seu caso específico.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ BOTÃO FLUTUANTE WHATSAPP ============ -->
+  <a class="ah-whatsapp-float" href="https://wa.me/5516991832231" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15L2 22l5.2-1.4A10 10 0 1012 2zm5.8 14.2c-.2.7-1.4 1.3-2 1.4-.5.1-1.1.2-3.6-.8-3-1.2-4.9-4.2-5-4.4-.1-.2-1.2-1.6-1.2-3s.8-2.1 1-2.4c.2-.2.5-.3.7-.3h.5c.2 0 .4 0 .6.5.2.5.7 1.8.8 1.9.1.2.1.4 0 .6-.1.2-.2.4-.4.6-.2.2-.4.4-.2.8.2.4.9 1.5 1.9 2.4 1.3 1.2 2.4 1.5 2.8 1.7.4.2.6.1.8-.1.2-.2.9-1 1.1-1.4.2-.4.5-.3.7-.2.3.1 1.7.8 2 1 .3.1.5.2.6.3.1.2.1.9-.1 1.6z"/></svg>
+  </a>
+
+</div>
+
+<script id="ah-script">
+(function(){
+  "use strict";
+  var root = document.getElementById('ah-site');
+  if(!root) return;
+
+  var header = document.getElementById('ahHeader');
+  var burger = document.getElementById('ahBurger');
+  var mobileMenu = document.getElementById('ahMobileMenu');
+
+  function onScroll(){
+    if(window.scrollY > 40){
+      header.classList.add('ah-scrolled');
+    } else {
+      header.classList.remove('ah-scrolled');
+    }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  function toggleMenu(open){
+    var isOpen = typeof open === 'boolean' ? open : !mobileMenu.classList.contains('ah-active');
+    mobileMenu.classList.toggle('ah-active', isOpen);
+    burger.classList.toggle('ah-open', isOpen);
+    burger.setAttribute('aria-expanded', String(isOpen));
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  }
+  burger.addEventListener('click', function(){ toggleMenu(); });
+  mobileMenu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ toggleMenu(false); });
+  });
+
+  root.querySelectorAll('a[href^="#"]').forEach(function(link){
+    link.addEventListener('click', function(e){
+      var id = link.getAttribute('href');
+      if(id.length < 2) return;
+      var target = document.querySelector(id);
+      if(!target) return;
+      e.preventDefault();
+      var headerHeight = header.offsetHeight + 10;
+      var top = target.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+      window.scrollTo({ top: top, behavior: 'smooth' });
+    });
+  });
+
+  var prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if('IntersectionObserver' in window && !prefersReducedMotion){
+    var revealEls = root.querySelectorAll('.ah-reveal');
+    revealEls.forEach(function(el){
+      var rect = el.getBoundingClientRect();
+      if(rect.top > window.innerHeight){ el.classList.add('ah-pre-reveal'); }
+    });
+    var observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          entry.target.classList.remove('ah-pre-reveal');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    revealEls.forEach(function(el){ if(el.classList.contains('ah-pre-reveal')){ observer.observe(el); } });
+  }
+
+  var yearEl = document.getElementById('ahYear');
+  if(yearEl){ yearEl.textContent = new Date().getFullYear(); }
+})();
+</script>
+
+</body>
+</html>
