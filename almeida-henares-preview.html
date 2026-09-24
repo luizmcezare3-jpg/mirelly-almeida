@@ -277,9 +277,23 @@ body:has(#ah-site){ margin:0; }
     inset:0;
     z-index:1;
     pointer-events:none;
-    background:
-      linear-gradient(90deg, rgba(44,9,24,0.94) 0%, rgba(44,9,24,0.82) 42%, rgba(82,18,48,0.60) 100%),
-      var(--ah-hero-img) center right / cover no-repeat;
+  }
+  #ah-site .ah-hero-bg::before{
+    content:"";
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:calc(-4% - clamp(0px, (1700px - 100vw) * 0.38, 100px));
+    aspect-ratio:3 / 2;
+    background: var(--ah-hero-img) center / 100% 100% no-repeat;
+    -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 38%);
+    mask-image: linear-gradient(90deg, transparent 0%, #000 38%);
+  }
+  #ah-site .ah-hero-bg::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background: linear-gradient(90deg, rgba(44,9,24,0.90) 0%, rgba(44,9,24,0.62) 42%, rgba(82,18,48,0.38) 100%);
   }
   #ah-site .ah-hero-text{ position:relative; z-index:2; }
   #ah-site .ah-hero-text h1{
@@ -686,10 +700,19 @@ body:has(#ah-site){ margin:0; }
     #ah-site .ah-depo-grid{ grid-template-columns:repeat(1,1fr); }
     #ah-site .ah-hero-grid{ grid-template-columns:1fr; }
     #ah-site .ah-hero-card{ max-width:440px; margin:0 auto; }
-    #ah-site .ah-hero-bg{
-      background:
-        linear-gradient(180deg, rgba(44,9,24,0.90) 0%, rgba(44,9,24,0.80) 55%, rgba(82,18,48,0.70) 100%),
-        var(--ah-hero-img) 68% center / cover no-repeat;
+    #ah-site .ah-hero-bg::before{
+      top:0;
+      left:0;
+      right:0;
+      bottom:auto;
+      height:clamp(380px, 95vw, 620px);
+      aspect-ratio:auto;
+      background: var(--ah-hero-img) 80% 6% / cover no-repeat;
+      -webkit-mask-image: linear-gradient(180deg, #000 55%, transparent 100%);
+      mask-image: linear-gradient(180deg, #000 55%, transparent 100%);
+    }
+    #ah-site .ah-hero-bg::after{
+      background: linear-gradient(180deg, rgba(44,9,24,0.62) 0%, rgba(44,9,24,0.55) 22%, rgba(44,9,24,0.86) 46%, rgba(44,9,24,0.92) 100%);
     }
     #ah-site .ah-sobre-grid{ grid-template-columns:1fr; }
     #ah-site .ah-avatar-frame{ margin-bottom:20px; }
